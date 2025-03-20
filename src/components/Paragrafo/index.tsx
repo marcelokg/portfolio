@@ -4,11 +4,12 @@ import { P } from './styles'
 export type tituloProps = {
   children: string
   tipo?: 'principal' | 'secundario'
+  fontSize?: number
 }
 
-const Paragrafo = ( {children, tipo = 'principal'} : tituloProps) => (
+const Paragrafo = ( {children, tipo = 'principal', fontSize} : tituloProps) => (
 
-<P tipo={tipo}>{children}</P>
+<P fontSize={fontSize} tipo={tipo}>{children}</P>
 
 )
 

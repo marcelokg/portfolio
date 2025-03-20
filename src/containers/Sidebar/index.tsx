@@ -1,11 +1,19 @@
 /* eslint-disable react/react-in-jsx-scope */
 
+import Avatar from "../../components/Avatar"
+import Paragrafo from "../../components/Paragrafo"
 import Titulo from "../../components/Titulo"
+import { Descricao, BotaoTema, SideBarContainer } from "./styles"
 
 const Sidebar = () => (
   <aside>
-    <img src="https://www.github.com/marcelokg.png"></img>
-    <Titulo fontSize={18}>Marcelo Kriiger</Titulo>
+    <SideBarContainer>
+      <Avatar></Avatar>
+      <Titulo fontSize={17}>Marcelo Kriiger</Titulo>
+      <Paragrafo tipo="secundario" fontSize={16}>marcelokg</Paragrafo>
+      <Descricao tipo="principal" fontSize={13}>Desenvolvedor Front-End</Descricao>
+      <BotaoTema>Trocar Tema</BotaoTema>
+    </SideBarContainer>
   </aside>
 )
 
